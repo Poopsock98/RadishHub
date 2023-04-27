@@ -1,1628 +1,328 @@
---[[
- Skid Protected with Squiddy Obfuscator
- Made by: Hooked#0156
-]]--
+--OPEN SOURCE GIVE CREDIT TO ME (Hooked#0156)
 
-do
-	local v0 = tonumber;
-	local v1 = string.byte;
-	local v2 = string.char;
-	local v3 = string.sub;
-	local v4 = string.gsub;
-	local v5 = string.rep;
-	local v6 = table.concat;
-	local v7 = table.insert;
-	local v8 = math.ldexp;
-	local v9 = getfenv or function()
-		return _ENV;
-	end;
-	local v10 = setmetatable;
-	local v11 = pcall;
-	local v12 = select;
-	local v13 = unpack or table.unpack;
-	local v14 = tonumber;
-	local function v15(v16, v17, ...)
-		local v18 = 1;
-		local v19;
-		v16 = v4(v3(v16, 5), "..", function(v30)
-			if (v1(v30, 2) == 79) then
-				local v68 = 0;
-				while true do
-					if (v68 == 0) then
-						v19 = v0(v3(v30, 1, 1));
-						return "";
-					end
-				end
-			else
-				local v69 = v2(v0(v30, 16));
-				if v19 then
-					local v76 = 0;
-					local v77;
-					while true do
-						if (v76 == 1) then
-							return v77;
-						end
-						if (v76 == 0) then
-							v77 = v5(v69, v19);
-							v19 = nil;
-							v76 = 1;
-						end
-					end
-				else
-					return v69;
-				end
-			end
-		end);
-		local function v20(v31, v32, v33)
-			if v33 then
-				local v70 = 580 - (142 + (1391 - (551 + 402)));
-				local v71;
-				while true do
-					if (v70 == (0 + 0)) then
-						v71 = (v31 / ((1 + (4 - 3)) ^ (v32 - (1 - 0)))) % (2 ^ (((v33 - (1 + 0)) - (v32 - (1 + 0))) + (30 - (22 + 7))));
-						return v71 - (v71 % (1 + 0));
-					end
-				end
-			else
-				local v72 = (4 - 2) ^ (v32 - (4 - 3));
-				return (((v31 % (v72 + v72)) >= v72) and (2 - 1)) or (0 - 0);
-			end
-		end
-		local function v21()
-			local v34 = 1981 - (96 + 1885);
-			local v35;
-			while true do
-				if (((2157 - (440 + 981)) - (99 + 636)) == v34) then
-					return v35;
-				end
-				if (v34 == (0 - 0)) then
-					v35 = v1(v16, v18, v18);
-					v18 = v18 + (1 - 0);
-					v34 = 1;
-				end
-			end
-		end
-		local function v22()
-			local v36, v37 = v1(v16, v18, v18 + (1294 - (337 + 955)));
-			v18 = v18 + (1195 - (552 + 641));
-			return (v37 * (19 + 237)) + v36;
-		end
-		local function v23()
-			local v38 = 0;
-			local v39;
-			local v40;
-			local v41;
-			local v42;
-			while true do
-				if (v38 == 1) then
-					return (v42 * (14825068 + 1952148)) + (v41 * (222464 - 156928)) + (v40 * (1293 - (540 + 497))) + v39;
-				end
-				if (v38 == ((1829 - (298 + 1531)) - (0 + 0))) then
-					v39, v40, v41, v42 = v1(v16, v18, v18 + (720 - (384 + 333)));
-					v18 = v18 + 3 + (2 - 1);
-					v38 = 1 + 0;
-				end
-			end
-		end
-		local function v24()
-			local v43 = v23();
-			local v44 = v23();
-			local v45 = 569 - (523 + 45);
-			local v46 = (v20(v44, 1, 91 - ((799 - (347 + 441)) + 60)) * (((2112 - 926) - ((1393 - 710) + 501)) ^ 32)) + v43;
-			local v47 = v20(v44, 52 - 31, 5 + 26);
-			local v48 = ((v20(v44, 32) == (431 - (100 + 330))) and -(1117 - (87 + 1029))) or (2 - 1);
-			if (v47 == (0 - 0)) then
-				if (v46 == (737 - (428 + 309))) then
-					return v48 * 0;
-				else
-					local v78 = 0 - 0;
-					while true do
-						if (v78 == (0 - 0)) then
-							v47 = 138 - (17 + 120);
-							v45 = 1519 - (952 + (1174 - 607));
-							break;
-						end
-					end
-				end
-			elseif (v47 == (7171 - 5124)) then
-				return ((v46 == (0 - 0)) and (v48 * (1 / (0 + 0)))) or (v48 * NaN);
-			end
-			return v8(v48, v47 - 1023) * (v45 + (v46 / ((5 - (6 - 3)) ^ (8 + 44))));
-		end
-		local function v25(v49)
-			local v50 = 208 - (153 + 54 + 1);
-			local v51;
-			local v52;
-			while true do
-				if ((6 - 4) == v50) then
-					v52 = {};
-					for v79 = 1721 - (139 + 1581), #v51 do
-						v52[v79] = v2(v1(v3(v51, v79, v79)));
-					end
-					v50 = 1 + 2;
-				end
-				if (v50 == ((1422 - (1343 + 78)) - 0)) then
-					v51 = v3(v16, v18, (v18 + v49) - (1492 - (1283 + 208)));
-					v18 = v18 + v49;
-					v50 = 2;
-				end
-				if (v50 == (200 - (167 + 30))) then
-					return v6(v52);
-				end
-				if (v50 == ((530 - (325 + 205)) - 0)) then
-					v51 = nil;
-					if not v49 then
-						v49 = v23();
-						if (v49 == (0 + 0)) then
-							return "";
-						end
-					end
-					v50 = 870 - (436 + 433);
-				end
-			end
-		end
-		local v26 = v23;
-		local function v27(...)
-			return {...}, v12("#", ...);
-		end
-		local function v28()
-			local v53 = 0 - 0;
-			local v54;
-			local v55;
-			local v56;
-			local v57;
-			local v58;
-			local v59;
-			while true do
-				local v67 = 0;
-				while true do
-					if (v67 ~= (0 - 0)) then
-					else
-						if (v53 == (0 + 0)) then
-							local v96 = 0;
-							local v97;
-							while true do
-								if (v96 == (379 - (57 + 322))) then
-									v97 = 0 + 0;
-									while true do
-										if (v97 ~= 1) then
-										else
-											v56 = {};
-											v53 = 1;
-											break;
-										end
-										if (v97 ~= (0 + 0)) then
-										else
-											v54 = {};
-											v55 = {};
-											v97 = 1 + 0;
-										end
-									end
-									break;
-								end
-							end
-						end
-						if (v53 ~= 2) then
-						else
-							local v98 = 0 - 0;
-							while true do
-								if (v98 ~= 1) then
-								else
-									for v113 = 221 - (186 + 34), v23() do
-										local v114 = 683 - (561 + 122);
-										local v115;
-										local v116;
-										local v117;
-										local v118;
-										while true do
-											if (v114 == (1852 - (1573 + 278))) then
-												v117 = nil;
-												v118 = nil;
-												v114 = 2;
-											end
-											if ((390 - (42 + 348)) == v114) then
-												v115 = 0 + 0;
-												v116 = nil;
-												v114 = 1 - 0;
-											end
-											if (v114 == (9 - 7)) then
-												while true do
-													if (1 ~= v115) then
-													else
-														v118 = nil;
-														while true do
-															if (v116 == (1548 - (919 + 628))) then
-																while true do
-																	if (v117 == (0 - 0)) then
-																		v118 = v21();
-																		if (v20(v118, 1, 1) ~= (0 - 0)) then
-																		else
-																			local v139 = 0 - 0;
-																			local v140;
-																			local v141;
-																			local v142;
-																			local v143;
-																			local v144;
-																			while true do
-																				if ((1 + 1) == v139) then
-																					v144 = nil;
-																					while true do
-																						if (v140 ~= (0 - 0)) then
-																						else
-																							local v254 = 0 + 0;
-																							local v255;
-																							while true do
-																								if (v254 ~= (0 - 0)) then
-																								else
-																									v255 = 1941 - (1762 + 179);
-																									while true do
-																										if (v255 ~= (385 - (76 + 309))) then
-																										else
-																											local v310 = 0 + 0;
-																											while true do
-																												if (v310 ~= (4 - 3)) then
-																												else
-																													v255 = 1;
-																													break;
-																												end
-																												if (v310 == (0 - 0)) then
-																													v141 = 0 + 0;
-																													v142 = nil;
-																													v310 = 1 - 0;
-																												end
-																											end
-																										end
-																										if ((1 + 0) ~= v255) then
-																										else
-																											v140 = 1 + 0;
-																											break;
-																										end
-																									end
-																									break;
-																								end
-																							end
-																						end
-																						if (v140 == (1 + 1)) then
-																							while true do
-																								if (v141 ~= (789 - (186 + 600))) then
-																								else
-																									if (v20(v143, 3, 4 - 1) ~= (1823 - (1738 + 84))) then
-																									else
-																										v144[1 + 3] = v59[v144[5 - 1]];
-																									end
-																									v54[v113] = v144;
-																									break;
-																								end
-																								if (v141 == (4 - 3)) then
-																									local v283 = 0 + 0;
-																									while true do
-																										if (v283 == 0) then
-																											local v311 = 167 - (49 + 118);
-																											local v312;
-																											while true do
-																												if (v311 ~= 0) then
-																												else
-																													v312 = 614 - (220 + 394);
-																													while true do
-																														if ((0 - 0) == v312) then
-																															local v347 = 0 + 0;
-																															while true do
-																																if (v347 == (3 - 2)) then
-																																	v312 = 798 - (426 + 371);
-																																	break;
-																																end
-																																if (v347 == (0 - 0)) then
-																																	v144 = {v22(),v22(),nil,nil};
-																																	if (v142 == 0) then
-																																		local v360 = 0 + 0;
-																																		while true do
-																																			if (v360 == (1754 - (579 + 1175))) then
-																																				v144[12 - 9] = v22();
-																																				v144[4] = v22();
-																																				break;
-																																			end
-																																		end
-																																	elseif (v142 == (1 + 0)) then
-																																		v144[9 - 6] = v23();
-																																	elseif (v142 == (3 - 1)) then
-																																		v144[11 - 8] = v23() - (2 ^ (15 + 1));
-																																	elseif (v142 == (8 - 5)) then
-																																		local v370 = 0;
-																																		local v371;
-																																		while true do
-																																			if (v370 ~= (0 + 0)) then
-																																			else
-																																				v371 = 113 - (90 + 23);
-																																				while true do
-																																					if (v371 == (0 - 0)) then
-																																						v144[2 + 1] = v23() - ((1 + 1) ^ (44 - 28));
-																																						v144[4] = v22();
-																																						break;
-																																					end
-																																				end
-																																				break;
-																																			end
-																																		end
-																																	end
-																																	v347 = 2 - 1;
-																																end
-																															end
-																														end
-																														if ((4 - 3) == v312) then
-																															v283 = 1 + 0;
-																															break;
-																														end
-																													end
-																													break;
-																												end
-																											end
-																										end
-																										if (v283 == 1) then
-																											v141 = 2;
-																											break;
-																										end
-																									end
-																								end
-																								if (v141 ~= (0 + 0)) then
-																								else
-																									local v284 = 0;
-																									local v285;
-																									local v286;
-																									while true do
-																										if (v284 ~= (1819 - (459 + 1359))) then
-																										else
-																											while true do
-																												if (v285 ~= (0 + 0)) then
-																												else
-																													v286 = 0;
-																													while true do
-																														if (v286 ~= 1) then
-																														else
-																															v141 = 1155 - (1133 + 21);
-																															break;
-																														end
-																														if (v286 ~= (0 - 0)) then
-																														else
-																															local v348 = 0 + 0;
-																															while true do
-																																if (v348 == (602 - (445 + 156))) then
-																																	v286 = 1630 - (1407 + 222);
-																																	break;
-																																end
-																																if (v348 ~= 0) then
-																																else
-																																	v142 = v20(v118, 1 + 1, 190 - (149 + 38));
-																																	v143 = v20(v118, 428 - (57 + 367), 755 - (298 + 451));
-																																	v348 = 1;
-																																end
-																															end
-																														end
-																													end
-																													break;
-																												end
-																											end
-																											break;
-																										end
-																										if (v284 ~= (0 + 0)) then
-																										else
-																											v285 = 1746 - (1055 + 691);
-																											v286 = nil;
-																											v284 = 239 - (132 + 106);
-																										end
-																									end
-																								end
-																								if (v141 == (3 - 1)) then
-																									local v287 = 0 - 0;
-																									while true do
-																										if (v287 ~= (579 - (489 + 89))) then
-																										else
-																											v141 = 1 + 2;
-																											break;
-																										end
-																										if (v287 ~= (0 + 0)) then
-																										else
-																											local v313 = 0 - 0;
-																											while true do
-																												if (v313 ~= (0 + 0)) then
-																												else
-																													if (v20(v143, 1378 - (1313 + 64), 1) == (1 + 0)) then
-																														v144[2] = v59[v144[6 - 4]];
-																													end
-																													if (v20(v143, 2, 2 - 0) == (1 + 0)) then
-																														v144[6 - 3] = v59[v144[3]];
-																													end
-																													v313 = 1;
-																												end
-																												if (v313 ~= (1 + 0)) then
-																												else
-																													v287 = 284 - (36 + 247);
-																													break;
-																												end
-																											end
-																										end
-																									end
-																								end
-																							end
-																							break;
-																						end
-																						if (v140 ~= (1 + 0)) then
-																						else
-																							local v256 = 0;
-																							local v257;
-																							while true do
-																								if (0 ~= v256) then
-																								else
-																									v257 = 0 - 0;
-																									while true do
-																										if (v257 ~= (1 + 0)) then
-																										else
-																											v140 = 7 - 5;
-																											break;
-																										end
-																										if (v257 == 0) then
-																											local v314 = 973 - (738 + 235);
-																											while true do
-																												if (v314 == (0 + 0)) then
-																													v143 = nil;
-																													v144 = nil;
-																													v314 = 1078 - (599 + 478);
-																												end
-																												if (v314 ~= (2 - 1)) then
-																												else
-																													v257 = 645 - (447 + 197);
-																													break;
-																												end
-																											end
-																										end
-																									end
-																									break;
-																								end
-																							end
-																						end
-																					end
-																					break;
-																				end
-																				if ((1125 - (921 + 204)) ~= v139) then
-																				else
-																					v140 = 0;
-																					v141 = nil;
-																					v139 = 1;
-																				end
-																				if (v139 ~= 1) then
-																				else
-																					v142 = nil;
-																					v143 = nil;
-																					v139 = 2;
-																				end
-																			end
-																		end
-																		break;
-																	end
-																end
-																break;
-															end
-															if (v116 ~= (1047 - (13 + 1034))) then
-															else
-																local v133 = 0 + 0;
-																local v134;
-																while true do
-																	if (v133 == (0 - 0)) then
-																		v134 = 0 - 0;
-																		while true do
-																			if (v134 == (3 - 2)) then
-																				v116 = 1 + 0;
-																				break;
-																			end
-																			if (v134 ~= (0 + 0)) then
-																			else
-																				local v145 = 0;
-																				while true do
-																					if (v145 == (0 + 0)) then
-																						v117 = 0 + 0;
-																						v118 = nil;
-																						v145 = 1 + 0;
-																					end
-																					if (v145 == (2 - 1)) then
-																						v134 = 1 + 0;
-																						break;
-																					end
-																				end
-																			end
-																		end
-																		break;
-																	end
-																end
-															end
-														end
-														break;
-													end
-													if (v115 ~= (0 + 0)) then
-													else
-														local v132 = 0 - 0;
-														while true do
-															if (v132 ~= 1) then
-															else
-																v115 = 1;
-																break;
-															end
-															if (v132 ~= (0 + 0)) then
-															else
-																v116 = 0 - 0;
-																v117 = nil;
-																v132 = 1 + 0;
-															end
-														end
-													end
-												end
-												break;
-											end
-										end
-									end
-									v53 = 3;
-									break;
-								end
-								if (v98 == (0 - 0)) then
-									for v119 = 1 - 0, v58 do
-										local v120 = 0 + 0;
-										local v121;
-										local v122;
-										local v123;
-										local v124;
-										while true do
-											if (v120 == (6 - 4)) then
-												while true do
-													if (v121 == (958 - (440 + 518))) then
-														v122 = 1890 - (270 + 1620);
-														v123 = nil;
-														v121 = 1 + 0;
-													end
-													if (v121 ~= (1 + 0)) then
-													else
-														v124 = nil;
-														while true do
-															if (v122 == (1112 - (869 + 242))) then
-																if (v123 == (1402 - (664 + 737))) then
-																	v124 = v21() ~= (1557 - (702 + 855));
-																elseif (v123 == (1 + 1)) then
-																	v124 = v24();
-																elseif (v123 == (1913 - (116 + 1794))) then
-																	v124 = v25();
-																end
-																v59[v119] = v124;
-																break;
-															end
-															if (v122 == (0 - 0)) then
-																local v136 = 0;
-																while true do
-																	if ((3 - 2) ~= v136) then
-																	else
-																		v122 = 1;
-																		break;
-																	end
-																	if (v136 ~= 0) then
-																	else
-																		v123 = v21();
-																		v124 = nil;
-																		v136 = 207 - (70 + 136);
-																	end
-																end
-															end
-														end
-														break;
-													end
-												end
-												break;
-											end
-											if (v120 ~= (773 - (296 + 476))) then
-											else
-												v123 = nil;
-												v124 = nil;
-												v120 = 1423 - (113 + 1308);
-											end
-											if (v120 ~= (1660 - (1599 + 61))) then
-											else
-												v121 = 0 + 0;
-												v122 = nil;
-												v120 = 1;
-											end
-										end
-									end
-									v57[436 - (52 + 381)] = v21();
-									v98 = 1;
-								end
-							end
-						end
-						v67 = 1 + 0;
-					end
-					if (v67 ~= (1 - 0)) then
-					else
-						if (v53 ~= (1186 - (281 + 904))) then
-						else
-							local v99 = 181 - (132 + 49);
-							local v100;
-							while true do
-								if (v99 ~= 0) then
-								else
-									v100 = 0 - 0;
-									while true do
-										if (v100 ~= (0 - 0)) then
-										else
-											local v129 = 0;
-											while true do
-												if (v129 == (2 - 1)) then
-													v100 = 2 - 1;
-													break;
-												end
-												if (v129 == (97 - (43 + 54))) then
-													v57 = {v54,v55,nil,v56};
-													v58 = v23();
-													v129 = 1 - 0;
-												end
-											end
-										end
-										if (v100 == 1) then
-											v59 = {};
-											v53 = 3 - 1;
-											break;
-										end
-									end
-									break;
-								end
-							end
-						end
-						if (v53 == (9 - 6)) then
-							local v101 = 0 + 0;
-							while true do
-								if (v101 ~= (0 + 0)) then
-								else
-									for v125 = 1107 - (365 + 741), v23() do
-										v55[v125 - (2 - 1)] = v28();
-									end
-									for v127 = 756 - (568 + 187), v23() do
-										v56[v127] = v23();
-									end
-									v101 = 1 + 0;
-								end
-								if (v101 ~= (1 + 0)) then
-								else
-									return v57;
-								end
-							end
-						end
-						break;
-					end
-				end
-			end
-		end
-		local function v29(v60, v61, v62)
-			local v63 = 0;
-			local v64;
-			local v65;
-			local v66;
-			while true do
-				if (v63 == 0) then
-					v64 = v60[1];
-					v65 = v60[2];
-					v63 = 1;
-				end
-				if (v63 == 1) then
-					v66 = v60[3];
-					return function(...)
-						local v81 = 1;
-						local v82 = -1;
-						local v83 = {...};
-						local v84 = v12("#", ...) - 1;
-						local function v85()
-							local v86 = v64;
-							local v87 = v65;
-							local v88 = v66;
-							local v89 = v27;
-							local v90 = {};
-							local v91 = {};
-							local v92 = {};
-							for v102 = 0 - 0, v84 do
-								if (((7401 - 3112) == ((447 + 4960) - (348 + 770))) and (v102 >= v88)) then
-									v90[v102 - v88] = v83[v102 + (673 - (54 + 618))];
-								else
-									v92[v102] = v83[v102 + 1 + 0];
-								end
-							end
-							local v93 = (v84 - v88) + (3 - 2);
-							local v94;
-							local v95;
-							while true do
-								local v103 = (3046 - (1240 + 159)) - (723 + 924);
-								local v104;
-								local v105;
-								while true do
-									if ((4328 > ((7402 - (302 + 1300)) - 2730)) and (v103 == 1)) then
-										while true do
-											if (((0 - (0 - 0)) == v104) or ((4932 - (566 + 1342)) == 4800)) then
-												v105 = 0 - 0;
-												while true do
-													if (((11044 - 7346) <= (6348 - (1039 + 900))) and (v105 == 0)) then
-														local v130 = 0 + 0;
-														local v131;
-														while true do
-															if (((339 + 889) <= (4167 + 489)) and (((0 - 0) + 0) == v130)) then
-																v131 = 0;
-																while true do
-																	if (((6517 - 1814) == ((4102 - (1662 + 183)) + 1792 + 654)) and (v131 == 0)) then
-																		v94 = v86[v81];
-																		v95 = v94[1];
-																		v131 = 1;
-																	end
-																	if (((4224 - (1123 + 180)) < (15886 - 11772)) and ((3 - 2) == v131)) then
-																		v105 = 1 + 0;
-																		break;
-																	end
-																end
-																break;
-															end
-														end
-													end
-													if (((1584 + 1450 + 365) >= (560 + 312)) and (v105 == (1 + 0))) then
-														if ((1731 > ((3864 - (1327 + 152)) - 1395)) and (v95 <= (170 - (150 + (266 - (219 + 46)))))) then
-															if (((687 + 207) < 4865) and (v95 <= (684 - (274 + 401)))) then
-																if ((2868 == (4578 - ((4570 - 3387) + 527))) and (v95 <= 4)) then
-																	if ((v95 <= (1745 - ((996 - (436 + 279)) + 1463))) or ((3101 + 18 + 80) >= 3766)) then
-																		if (((4907 + 5) > (9215 - 4766)) and (v95 > (1990 - (1113 + 877)))) then
-																			v92[v94[3 - 1]][v94[13 - 10]] = v94[1 + 3];
-																		else
-																			v92[v94[1 + 1]] = v92[v94[3]] - v92[v94[4]];
-																		end
-																	elseif ((v95 <= (7 - 5)) or ((3702 - (448 + 433)) < (2434 - ((291 - 205) + 1493)))) then
-																		local v149 = 0 - 0;
-																		local v150;
-																		local v151;
-																		while true do
-																			if (((1111 - (242 + 130)) == (2434 - (840 + 855))) and (v149 == (1225 - (1188 + 37)))) then
-																				v150 = 1567 - (423 + 1144);
-																				v151 = nil;
-																				v149 = 1297 - ((1638 - (737 + 197)) + 592);
-																			end
-																			if ((1637 <= (10964 - 7662)) and (v149 == (1 + 0))) then
-																				while true do
-																					if ((v150 == (494 - (290 + 204))) or ((2636 - (996 + 345)) <= 238)) then
-																						v151 = v94[2];
-																						v92[v151] = v92[v151]();
-																						break;
-																					end
-																				end
-																				break;
-																			end
-																		end
-																	elseif (((1968 - (37 + 402)) <= (2158 - (421 + 10))) and (v95 == (3 + 0))) then
-																		for v233 = v94[1020 - (594 + 424)], v94[7 - 4] do
-																			v92[v233] = nil;
-																		end
-																	else
-																		v92[v94[2]] = {};
-																	end
-																elseif ((v95 <= (2 + 4)) or ((214 + 4721) < 4266)) then
-																	if (((4576 - 1312) > 2496) and (v95 == (10 - 5))) then
-																		v92[v94[2]] = v92[v94[3 + 0]][v94[1 + 3]];
-																	elseif (((997 - (215 + 610)) <= (163 + 531)) and (v92[v94[851 - (114 + (1337 - (351 + 251)))]] ~= v94[760 - (683 + 73)])) then
-																		v81 = v81 + (1147 - (749 + 258 + 139));
-																	else
-																		v81 = v94[251 - (120 + 128)];
-																	end
-																elseif (((1560 - 712) < (516 + 659)) and (v95 <= 7)) then
-																	if ((v92[v94[3 - (3 - 2)]] ~= v92[v94[2 + 2]]) or ((12927 - 8174) >= 4795)) then
-																		v81 = v81 + 1 + 0;
-																	else
-																		v81 = v94[3 + 0];
-																	end
-																elseif (((15681 - 12378) > 2685) and (v95 == 8)) then
-																	do
-																		return;
-																	end
-																else
-																	v92[v94[2]] = v61[v94[3]];
-																end
-															elseif ((v95 <= (14 + 0)) or ((2116 - 1432) >= 908)) then
-																if ((v95 <= 11) or ((127 + 434 + 2156) >= (6334 - (758 + 599)))) then
-																	if ((2543 >= 1539) and (v95 > (32 - 22))) then
-																		local v154 = 0;
-																		local v155;
-																		local v156;
-																		while true do
-																			if ((v154 == (0 + (0 - 0))) or ((1744 - (936 + 87)) >= (237 + 1013))) then
-																				v155 = 0 + 0;
-																				v156 = nil;
-																				v154 = 1 + 0;
-																			end
-																			if ((v154 == 1) or ((4133 - (158 + 87)) < (405 + 2584))) then
-																				while true do
-																					if ((v155 == (708 - (252 + 456))) or ((554 + 252) < 767)) then
-																						v156 = v94[4 - 2];
-																						do
-																							return v13(v92, v156, v156 + v94[11 - 8]);
-																						end
-																						break;
-																					end
-																				end
-																				break;
-																			end
-																		end
-																	else
-																		v92[v94[444 - (353 + 89)]] = v92[v94[1894 - ((1038 - 392) + 1245)]] / v94[2 + 2];
-																	end
-																elseif ((v95 <= (8 + 4)) or ((9877 - (2378 + 2552)) <= (7395 - 4066))) then
-																	v61[v94[7 - (210 - (119 + 87))]] = v92[v94[924 - (594 + 328)]];
-																elseif (((7465 - 4223) == (1350 + 1892)) and (v95 == (1191 - (1115 + 63)))) then
-																	local v202 = 0 - 0;
-																	local v203;
-																	local v204;
-																	local v205;
-																	local v206;
-																	while true do
-																		if ((2120 < (2568 + 303)) and (v202 == 1)) then
-																			local v258 = 0;
-																			while true do
-																				if (((2589 + (863 - 374)) < (1123 + 2026)) and (v258 == (1356 - (1262 + 93)))) then
-																					v202 = 2;
-																					break;
-																				end
-																				if ((v258 == 0) or (((11512 - 6124) - (1636 + 134)) <= 2776)) then
-																					v205 = nil;
-																					v206 = nil;
-																					v258 = 2 - 1;
-																				end
-																			end
-																		end
-																		if ((v202 == (2 + 0)) or (3762 == (1882 + 1210))) then
-																			while true do
-																				if (((1 + 0) == v203) or (3607 == (108 + 1170))) then
-																					local v288 = 0;
-																					local v289;
-																					while true do
-																						if (((1626 - (506 + 49)) < (1541 - (9 + 105))) and (v288 == (0 + 0))) then
-																							v289 = 1991 - (1003 + 988);
-																							while true do
-																								if ((v289 == (0 - 0)) or ((4549 - 2537) < (2372 - (705 + 285 + 457)))) then
-																									v206 = {};
-																									v205 = v10({}, {__index=function(v327, v328)
-																										local v329 = 0 + 0;
-																										local v330;
-																										local v331;
-																										local v332;
-																										while true do
-																											if (((1688 - (30 + 1658)) == v329) or ((2263 + 50) == (13 + 73))) then
-																												v330 = 0;
-																												v331 = nil;
-																												v329 = 2 - (1 - 0);
-																											end
-																											if (((1 + 0) == v329) or ((1743 + 879) <= (7722 - 5102))) then
-																												v332 = nil;
-																												while true do
-																													if ((v330 == 1) or (1712 > 3385)) then
-																														while true do
-																															if ((v331 == 0) or ((107 + 35) > (395 + 120))) then
-																																local v362 = 0 - 0;
-																																local v363;
-																																while true do
-																																	if ((v362 == 0) or ((8948 - 5969) <= ((1631 - (40 + 10)) + 330))) then
-																																		v363 = 0 + 0;
-																																		while true do
-																																			if ((v363 == 0) or ((3633 - (39 + 282)) >= (1486 + 2715))) then
-																																				local v372 = 0 + 0;
-																																				while true do
-																																					if (((931 + 2749) == (18333 - 14653)) and (v372 == (0 + 0))) then
-																																						v332 = v206[v328];
-																																						return v332[1 + 0][v332[2]];
-																																					end
-																																				end
-																																			end
-																																		end
-																																		break;
-																																	end
-																																end
-																															end
-																														end
-																														break;
-																													end
-																													if (((1039 + 336) <= (1670 + 381)) and ((0 - 0) == v330)) then
-																														v331 = 0 - 0;
-																														v332 = nil;
-																														v330 = 3 - 2;
-																													end
-																												end
-																												break;
-																											end
-																										end
-																									end,__newindex=function(v333, v334, v335)
-																										local v336 = 1872 - ((1746 - (696 + 740)) + 1562);
-																										local v337;
-																										while true do
-																											if (((5431 - ((128 - 48) + 312 + 380)) == (751 + 3908)) and (v336 == 0)) then
-																												v337 = v206[v334];
-																												v337[1 + 0][v337[2 + 0]] = v335;
-																												break;
-																											end
-																										end
-																									end});
-																									v289 = 2 - 1;
-																								end
-																								if ((v289 == (1 + (126 - (115 + 11)))) or ((414 + 100) >= 3517)) then
-																									v203 = 1 + 1;
-																									break;
-																								end
-																							end
-																							break;
-																						end
-																					end
-																				end
-																				if ((v203 == 2) or (3180 < 1354)) then
-																					for v297 = 1 + 0, v94[10 - 6] do
-																						local v298 = 0;
-																						local v299;
-																						local v300;
-																						while true do
-																							if ((v298 == 0) or (((934 - (195 + 721)) + 2418) >= (2175 + 1197))) then
-																								v299 = (1464 - (19 + 193)) - (298 + 954);
-																								v300 = nil;
-																								v298 = 1 + 0;
-																							end
-																							if ((((13135 - (130 + 94)) - 7981) > (1958 - 875)) and (v298 == (1 + 0))) then
-																								while true do
-																									if ((2762 <= (6467 - 3563)) and (v299 == ((2 + 1) - 2))) then
-																										if ((v300[1] == (29 - 12)) or (3388 < (81 + 365))) then
-																											v206[v297 - (242 - ((153 - 97) + 185))] = {v92,v300[826 - (704 + (208 - 89))]};
-																										else
-																											v206[v297 - ((1791 - (1712 + 78)) + 0)] = {v61,v300[2 + 1]};
-																										end
-																										v91[#v91 + (2 - 1)] = v206;
-																										break;
-																									end
-																									if (((5908 - (457 + 692)) <= 4893) and (v299 == 0)) then
-																										local v339 = 0 - 0;
-																										while true do
-																											if ((v339 == (0 + 0)) or ((7410 - 3751) == (1890 - (377 + 323)))) then
-																												v81 = v81 + 1;
-																												v300 = v86[v81];
-																												v339 = 2 - 1;
-																											end
-																											if ((v339 == (1308 - (1061 + 246))) or (4635 <= 3783)) then
-																												v299 = 1;
-																												break;
-																											end
-																										end
-																									end
-																								end
-																								break;
-																							end
-																						end
-																					end
-																					v92[v94[2 + 0]] = v29(v204, v205, v62);
-																					break;
-																				end
-																				if (((2156 - (6 + 1067)) <= (978 + 703)) and (v203 == (0 + 0))) then
-																					local v291 = 0 - 0;
-																					while true do
-																						if ((v291 == (0 - 0)) or ((4312 - 3056) < (66 + 371 + 318))) then
-																							local v315 = 0 - 0;
-																							while true do
-																								if (((794 + 1708) == (1655 + 847)) and (v315 == (1 + 0))) then
-																									v291 = 1 + 0;
-																									break;
-																								end
-																								if (((7740 - 5253) <= (6019 - 3114)) and (v315 == (981 - (365 + 616)))) then
-																									v204 = v87[v94[5 - 2]];
-																									v205 = nil;
-																									v315 = 1881 - (1675 + 205);
-																								end
-																							end
-																						end
-																						if (((1501 - (907 + 100)) > 48) and (v291 == 1)) then
-																							v203 = 1 + 0;
-																							break;
-																						end
-																					end
-																				end
-																			end
-																			break;
-																		end
-																		if (((182 + 102) < (152 + 2058)) and (v202 == (1609 - (731 + 878)))) then
-																			v203 = 1115 - (845 + 270);
-																			v204 = nil;
-																			v202 = 2 - 1;
-																		end
-																	end
-																else
-																	local v207 = 0 + 0;
-																	local v208;
-																	local v209;
-																	while true do
-																		if (((698 + 428 + 411) < 2532) and (v207 == (1 + 0))) then
-																			while true do
-																				if ((v208 == 0) or ((2102 + (5476 - 4078)) > 3640)) then
-																					v209 = v94[3 - 1];
-																					v92[v209] = v92[v209](v13(v92, v209 + (2 - 1), v82));
-																					break;
-																				end
-																			end
-																			break;
-																		end
-																		if ((v207 == (0 + (0 - 0))) or ((3180 - (909 + 294 + 49)) >= (3619 - (121 + 480)))) then
-																			v208 = 0;
-																			v209 = nil;
-																			v207 = 2 - 1;
-																		end
-																	end
-																end
-															elseif ((v95 <= (29 - 13)) or (((13928 - 9060) - 2864) >= (5937 - 2374))) then
-																if ((v95 > (24 - 9)) or ((1664 - (972 + 41)) > 2098)) then
-																	v81 = v94[1469 - (1253 + 213)];
-																else
-																	local v161 = 188 - (78 + 110);
-																	local v162;
-																	local v163;
-																	local v164;
-																	while true do
-																		if ((v161 == (0 + 0)) or (3104 < (1631 - (222 + 1047)))) then
-																			v162 = 0;
-																			v163 = nil;
-																			v161 = 1642 - ((2002 - (506 + 203)) + 348);
-																		end
-																		if (((1707 + 2273) <= (10802 - (6939 - (371 + 181)))) and (v161 == (1 - 0))) then
-																			v164 = nil;
-																			while true do
-																				if (((2861 - (203 + 1120)) >= (3375 - ((3155 - (931 + 603)) + 241))) and (v162 == (0 - (0 - 0)))) then
-																					v163 = v94[1 + 1];
-																					v164 = v92[v94[9 - 6]];
-																					v162 = 1 + 0;
-																				end
-																				if ((((7602 - 4246) + 1571) >= (6687 - 2558)) and (v162 == 1)) then
-																					v92[v163 + 1 + 0 + 0] = v164;
-																					v92[v163] = v164[v94[1848 - (917 + 927)]];
-																					break;
-																				end
-																			end
-																			break;
-																		end
-																	end
-																end
-															elseif (((5050 - 2245) > (187 + 284)) and (v95 <= ((1680 - (250 + 832)) - ((324 - (125 + 72)) + 454)))) then
-																v92[v94[4 - 2]] = v92[v94[3 + 0]];
-															elseif ((v95 == (1601 - (286 + 1297))) or ((1216 + 2581) > (17648 - 13005))) then
-																if ((v92[v94[3 - (1 + 0)]] == v92[v94[1084 - (569 + 511)]]) or ((8295 - 5645) == (1637 + 525))) then
-																	v81 = v81 + (2 - 1);
-																else
-																	v81 = v94[2 + 1];
-																end
-															else
-																v92[v94[1950 - (455 + 1493)]] = v29(v87[v94[3]], nil, v62);
-															end
-														elseif ((v95 <= (204 - ((1188 - (598 + 577)) + 162))) or (2923 >= (3918 - (698 + 251)))) then
-															if ((v95 <= (65 - 41)) or ((2534 - (12 + 16)) > 2554)) then
-																if ((((13498 - 8291) - (403 + 1255)) >= (2159 - (901 + 654))) and (v95 <= (32 - 11))) then
-																	if ((v95 > 20) or (3784 > (5134 - 1327))) then
-																		local v167 = (1244 - (395 + 849)) - 0;
-																		local v168;
-																		local v169;
-																		local v170;
-																		local v171;
-																		while true do
-																			if (((603 + 1663) > (2479 - (255 + 563))) and (v167 == 1)) then
-																				v170 = nil;
-																				v171 = nil;
-																				v167 = 1629 - (1213 + 414);
-																			end
-																			if (((1619 - (308 + 1255)) <= (3510 + 753)) and (v167 == (0 - 0))) then
-																				v168 = 0;
-																				v169 = nil;
-																				v167 = (1276 - (342 + 283)) - (319 + 331);
-																			end
-																			if ((4229 < ((5327 - (107 + 573)) - (37 + 34))) and (v167 == (2 + 0))) then
-																				while true do
-																					if ((4824 == (2244 + 2580)) and (v168 == (0 + 0))) then
-																						v169 = v94[6 - 4];
-																						v170 = v92[v169];
-																						v168 = 2 - 1;
-																					end
-																					if ((v168 == (1 - 0)) or ((3476 - (1064 + 533)) > (6509 - 2371))) then
-																						v171 = v94[1 + 2];
-																						for v277 = 3 - 2, v171 do
-																							v170[v277] = v92[v169 + v277];
-																						end
-																						break;
-																					end
-																				end
-																				break;
-																			end
-																		end
-																	else
-																		v92[v94[2 - 0]] = v94[3] ~= 0;
-																	end
-																elseif ((v95 <= ((641 - (31 + 599)) + 11)) or ((2423 + (1688 - (729 + 758))) > (4943 - (1435 + 10)))) then
-																	local v173 = 0 - (0 + 0);
-																	local v174;
-																	local v175;
-																	local v176;
-																	local v177;
-																	local v178;
-																	while true do
-																		if ((v173 == (1 + (1578 - (385 + 1192)))) or (377 > (38 + 2193))) then
-																			v178 = nil;
-																			while true do
-																				if ((v174 == 0) or ((3297 - (860 + 752)) >= (10384 - 6856))) then
-																					local v270 = 0 - 0;
-																					while true do
-																						if (((4475 - (1091 + 347)) <= 4143) and ((1 + 0) == v270)) then
-																							v174 = 1 + 0;
-																							break;
-																						end
-																						if ((v270 == (0 - 0)) or ((5853 - (302 + 1458 + 133)) < (7305 - 4917))) then
-																							v175 = 0 + 0;
-																							v176 = nil;
-																							v270 = 2 - 1;
-																						end
-																					end
-																				end
-																				if ((2064 >= 136) and (v174 == (1 - 0))) then
-																					v177 = nil;
-																					v178 = nil;
-																					v174 = 1802 - (1290 + 510);
-																				end
-																				if (((18021 - 13481) > ((4540 + 290) - (475 + 219))) and (v174 == (601 - (417 + 182)))) then
-																					while true do
-																						if (((427 + 689) <= (284 + 2179)) and ((1 - 0) == v175)) then
-																							v178 = 0 + 0;
-																							for v306 = v176, v94[3 + 1] do
-																								local v307 = 0 + 0;
-																								local v308;
-																								while true do
-																									if ((v307 == (677 - (81 + 596))) or ((9088 - 4933) <= (60 + 26 + 1061))) then
-																										v308 = 0 - 0;
-																										while true do
-																											if (((4564 - (1023 + 569)) <= (3957 - ((156 - 104) + (564 - (6 + 10))))) and (v308 == (0 - 0))) then
-																												v178 = v178 + 1;
-																												v92[v306] = v177[v178];
-																												break;
-																											end
-																										end
-																										break;
-																									end
-																								end
-																							end
-																							break;
-																						end
-																						if (((6273 - ((1400 - (182 + 459)) + (1672 - (202 + 537)))) > ((3306 - (1164 + 753)) + 2995)) and (v175 == (0 + 0))) then
-																							local v301 = 1263 - (868 + 197 + 198);
-																							local v302;
-																							while true do
-																								if ((1415 <= 2708) and (v301 == (1690 - ((2175 - 1012) + 57 + 470)))) then
-																									v302 = 0 + 0;
-																									while true do
-																										if (((112 + 125) <= 407) and (v302 == (1 - (0 + 0)))) then
-																											v175 = 916 - (905 + 10);
-																											break;
-																										end
-																										if ((v302 == (544 - ((265 - (145 + 7)) + 431))) or ((743 - (43 + 38)) == (3232 - (116 + 655)))) then
-																											local v340 = 0;
-																											while true do
-																												if ((v340 == 0) or (((2536 - 1111) - 1025) > (239 + 908))) then
-																													v176 = v94[307 - ((1054 - (772 + 201)) + 224)];
-																													v177 = {v92[v176](v92[v176 + ((541 + 844) - (82 + 1302))])};
-																													v340 = 1 + 0 + (0 - 0);
-																												end
-																												if ((((2608 - (980 + 93)) - (462 + 988)) < ((4105 - (229 + 266)) - (323 + 1508))) and (v340 == (2 - 1))) then
-																													v302 = 1 + 0;
-																													break;
-																												end
-																											end
-																										end
-																									end
-																									break;
-																								end
-																							end
-																						end
-																					end
-																					break;
-																				end
-																			end
-																			break;
-																		end
-																		if ((v173 == (1379 - (674 + (2324 - (798 + 821))))) or (2809 < (1864 - (600 + 261)))) then
-																			v174 = 0 + 0;
-																			v175 = nil;
-																			v173 = 1 + 0;
-																		end
-																		if (((3674 - 1847) == ((1593 - 826) + 1060)) and (v173 == 1)) then
-																			v176 = nil;
-																			v177 = nil;
-																			v173 = 689 - ((1291 - (725 + 103)) + 196 + 28);
-																		end
-																	end
-																elseif (((2313 + 221) <= (4547 - (1332 + 382))) and (v95 > (34 - 11))) then
-																	v92[v94[5 - 3]] = v94[(11 + 2) - (9 + 1)];
-																else
-																	v92[v94[1832 - ((807 - 297) + 1320)]][v94[6 - (5 - 2)]] = v92[v94[(3168 - (250 + 1090)) - (1196 + 628)]];
-																end
-															elseif ((v95 <= (394 - (199 + 169))) or ((2161 - (639 + 338)) < (399 - 299))) then
-																if ((v95 == (5 + 20)) or ((917 + (2268 - (30 + 1528))) == (6494 - (889 + 783)))) then
-																	local v179 = 0 + 0;
-																	local v180;
-																	local v181;
-																	local v182;
-																	local v183;
-																	while true do
-																		if (((1420 + 3062) <= (6552 - 2013)) and (v179 == (0 - 0))) then
-																			local v235 = 0 - 0;
-																			while true do
-																				if ((v235 == (1 + 0)) or (((13555 - 10271) - (584 + 498)) < (50 + 799))) then
-																					v179 = 2 - 1;
-																					break;
-																				end
-																				if ((v235 == (0 - 0)) or ((1694 - 761) >= (5489 - (1707 + 16)))) then
-																					v180 = v94[1193 - (264 + 927)];
-																					v181, v182 = v89(v92[v180](v13(v92, v180 + ((1690 + 269) - (1067 + 891)), v94[173 - (139 + 31)])));
-																					v235 = 1530 - (926 + 603);
-																				end
-																			end
-																		end
-																		if ((v179 == 2) or (2209 < (1809 - 1188))) then
-																			for v242 = v180, v82 do
-																				local v243 = 1676 - (151 + (2525 - (383 + 617)));
-																				while true do
-																					if ((v243 == 0) or ((10339 - 6326) < (294 + 3393))) then
-																						v183 = v183 + 1 + 0;
-																						v92[v242] = v181[v183];
-																						break;
-																					end
-																				end
-																			end
-																			break;
-																		end
-																		if (((577 + 735) < 4202) and (v179 == (1 - 0))) then
-																			v82 = (v182 + v180) - 1;
-																			v183 = 1727 - (152 + 1575);
-																			v179 = 2;
-																		end
-																	end
-																else
-																	local v184 = 0;
-																	local v185;
-																	local v186;
-																	while true do
-																		if ((v184 == 1) or ((6661 - 5058) == (439 + 3955))) then
-																			while true do
-																				if (((12435 - 7497) == 4938) and (v185 == (638 - ((387 - (238 + 26)) + 515)))) then
-																					v186 = v94[(1516 + 441) - (872 + 1083)];
-																					v92[v186] = v92[v186](v92[v186 + ((3208 - 2190) - (448 + (808 - (186 + 53))))]);
-																					break;
-																				end
-																			end
-																			break;
-																		end
-																		if ((v184 == (1598 - (303 + 1295))) or ((1029 - (792 + 217)) >= 299)) then
-																			local v236 = 0 - 0;
-																			while true do
-																				if ((v236 == (1 + 0)) or ((2332 + 267) > (246 + 2956))) then
-																					v184 = 1 - 0;
-																					break;
-																				end
-																				if ((v236 == (0 + 0)) or ((32 + (9 - 5)) >= (6332 - (149 + 1613)))) then
-																					v185 = 0;
-																					v186 = nil;
-																					v236 = 107 - (65 + 18 + 23);
-																				end
-																			end
-																		end
-																	end
-																end
-															elseif (((1449 + 3190) > (4967 - 2074)) and (v95 <= (43 - 16))) then
-																v92[v94[2]]();
-															elseif ((v95 == ((1198 - (1169 + 14)) + 13)) or ((8626 - 3827) <= ((1610 - (422 + 943)) + 3421))) then
-																if ((v94[1 + 1] == v92[v94[13 - 9]]) or (3911 <= (2066 - 768))) then
-																	v81 = v81 + ((3663 - 2331) - ((1622 - (259 + 1119)) + 1087));
-																else
-																	v81 = v94[4 - 1];
-																end
-															else
-																v92[v94[4 - 2]] = v92[v94[3]][v92[v94[6 - 2]]];
-															end
-														elseif (((5103 - 3384) < (7646 - 5015)) and (v95 <= 34)) then
-															if (((8952 - (14005 - 9986)) >= ((5472 - (115 + 372)) - (20 + 305))) and (v95 <= (337 - (76 + 230)))) then
-																if (((2206 + 24 + 906) < 4882) and (v95 > (245 - (17 + 198)))) then
-																	local v187 = 0 - 0;
-																	local v188;
-																	local v189;
-																	while true do
-																		if (((5139 - (1665 + 18)) >= (2251 - 1396)) and (v187 == (0 - 0))) then
-																			local v237 = 0 - 0;
-																			while true do
-																				if (((1535 + 1415) > (1306 + 703)) and (v237 == (0 + 0))) then
-																					v188 = v94[9 - 7];
-																					v189 = {};
-																					v237 = (1 + 0) - 0;
-																				end
-																				if ((v237 == 1) or ((390 + 405) < (95 + 698))) then
-																					v187 = 657 - (479 + 177);
-																					break;
-																				end
-																			end
-																		end
-																		if ((v187 == (416 - (207 + 208))) or ((194 + 2565) < 2252)) then
-																			for v245 = 1, #v91 do
-																				local v246 = 1951 - (747 + 1204);
-																				local v247;
-																				local v248;
-																				local v249;
-																				while true do
-																					if (((1107 - (204 + 325)) < (2710 + 28)) and ((0 - 0) == v246)) then
-																						v247 = (2069 - (339 + 316)) - (442 + 972);
-																						v248 = nil;
-																						v246 = 303 - ((613 - 378) + 67);
-																					end
-																					if ((v246 == (329 - (215 + 113))) or (4540 < (2183 + 87))) then
-																						v249 = nil;
-																						while true do
-																							if (((3195 - 1936) < 3985) and (v247 == (0 + 0))) then
-																								local v309 = 1734 - (946 + 102 + 686);
-																								while true do
-																									if ((v309 == (1896 - (1242 + 654))) or ((723 + 639) >= (13214 - 8928))) then
-																										v248 = 548 - (304 + (1338 - (727 + 367)));
-																										v249 = nil;
-																										v309 = 1 - 0;
-																									end
-																									if (((36 + 395) < 1594) and (v309 == (431 - (127 + 303)))) then
-																										v247 = 1 + 0;
-																										break;
-																									end
-																								end
-																							end
-																							if (((2783 - (78 + 1130)) <= 1830) and (v247 == 1)) then
-																								while true do
-																									if ((v248 == (0 + 0)) or (411 >= (5425 - (106 + 1099)))) then
-																										v249 = v91[v245];
-																										for v322 = 0 - 0, #v249 do
-																											local v323 = 0 + 0;
-																											local v324;
-																											local v325;
-																											local v326;
-																											while true do
-																												if (((5288 - ((2919 - (1309 + 304)) + 64)) > 2388) and (v323 == (1 + 0))) then
-																													v326 = v324[1258 - (332 + (1636 - 712))];
-																													if (((v325 == v92) and (v326 >= v188)) or ((8877 - 5275) == (2226 - (326 + (93 - 44))))) then
-																														local v358 = 669 - ((2098 - (1598 + 113)) + (1014 - (369 + 363)));
-																														local v359;
-																														while true do
-																															if (((2557 + 482) == (12627 - 9588)) and (v358 == 0)) then
-																																v359 = 0 - 0;
-																																while true do
-																																	if (((6324 - (1127 + 540)) == 4657) and (v359 == ((0 + 0) - 0))) then
-																																		v189[v326] = v325[v326];
-																																		v324[732 - (702 + 29)] = v189;
-																																		break;
-																																	end
-																																end
-																																break;
-																															end
-																														end
-																													end
-																													break;
-																												end
-																												if ((4890 >= (1954 - (22 + 106))) and (v323 == 0)) then
-																													v324 = v249[v322];
-																													v325 = v324[1];
-																													v323 = 3 - 2;
-																												end
-																											end
-																										end
-																										break;
-																									end
-																								end
-																								break;
-																							end
-																						end
-																						break;
-																					end
-																				end
-																			end
-																			break;
-																		end
-																	end
-																else
-																	local v190 = 0 + 0;
-																	local v191;
-																	local v192;
-																	while true do
-																		if ((1920 >= 752) and (v190 == (0 + 0))) then
-																			v191 = 740 - (341 + 399);
-																			v192 = nil;
-																			v190 = 1;
-																		end
-																		if (((7051 - (18802 - 14365)) < (126 + 2699 + 1535)) and ((1 + 0) == v190)) then
-																			while true do
-																				if ((v191 == (0 - 0)) or ((3290 - (20 + 75)) == (727 - (4 + 73)))) then
-																					v192 = v94[1186 - (819 + 365)];
-																					v92[v192] = v92[v192](v13(v92, v192 + (1 - 0), v94[3]));
-																					break;
-																				end
-																			end
-																			break;
-																		end
-																	end
-																end
-															elseif ((1069 == (4847 - 3778)) and (v95 <= (15 + 17))) then
-																if ((v92[v94[2 + 0]] == v94[(15 - 11) + 0]) or ((5976 - (650 + 75 + 902)) < (8612 - 4380))) then
-																	v81 = v81 + (261 - ((920 - (678 + 20)) + 38));
-																else
-																	v81 = v94[207 - (163 + 41)];
-																end
-															elseif ((v95 > (62 - 29)) or ((1477 - (503 + 246)) >= 2204)) then
-																local v218 = v94[2];
-																local v219 = v94[3 + 1];
-																local v220 = v218 + 2 + (975 - (326 + 649));
-																local v221 = {v92[v218](v92[v218 + (600 - (551 + 48))], v92[v220])};
-																for v238 = 1989 - (1192 + 796), v219 do
-																	v92[v220 + v238] = v221[v238];
-																end
-																local v222 = v221[1];
-																if (v222 or ((3712 - (540 + 1453)) > (17960 - 14332))) then
-																	local v250 = 0 - (896 - (491 + 405));
-																	local v251;
-																	local v252;
-																	while true do
-																		if ((v250 == (1468 - (477 + 990))) or (((10647 - 5878) - 3166) > (2596 + 1044))) then
-																			while true do
-																				if (((225 + 2744) >= (7245 - (2756 + 2246))) and (v251 == 0)) then
-																					v252 = 0 - 0;
-																					while true do
-																						if (((159 + 367) <= (170 + 2259)) and (v252 == ((502 - (291 + 211)) + 0))) then
-																							v92[v220] = v222;
-																							v81 = v94[8 - 5];
-																							break;
-																						end
-																					end
-																					break;
-																				end
-																			end
-																			break;
-																		end
-																		if (((848 + 2276) < (18888 - 14577)) and (v250 == 0)) then
-																			v251 = 0 - 0;
-																			v252 = nil;
-																			v250 = 2 - 1;
-																		end
-																	end
-																else
-																	v81 = v81 + (4 - 3);
-																end
-															else
-																local v223 = 0 - 0;
-																local v224;
-																local v225;
-																local v226;
-																while true do
-																	if (((1733 - (118 + 1615)) == v223) or ((7870 - 5777) >= (182 + 3813))) then
-																		v224 = 0 - 0;
-																		v225 = nil;
-																		v223 = 537 - (296 + 240);
-																	end
-																	if (((15699 - 11968) > (222 - 96)) and (v223 == 1)) then
-																		v226 = nil;
-																		while true do
-																			if ((v224 == (2 - 1)) or (3877 == ((6943 - 4350) - (1114 + 470)))) then
-																				for v303 = v225 + 1 + 0, v94[8 - 5] do
-																					v7(v226, v92[v303]);
-																				end
-																				break;
-																			end
-																			if ((0 == v224) or (905 > 944)) then
-																				local v294 = 0 + 0 + (0 - 0);
-																				while true do
-																					if ((v294 == (4 - 3)) or (3342 > (5371 - (133 + (4940 - 3285))))) then
-																						v224 = 1 - 0;
-																						break;
-																					end
-																					if (((73 + 3361) > ((3406 - (728 + 137)) - (1026 + 965))) and (v294 == (0 - 0))) then
-																						v225 = v94[2];
-																						v226 = v92[v225];
-																						v294 = 3 - 2;
-																					end
-																				end
-																			end
-																		end
-																		break;
-																	end
-																end
-															end
-														elseif ((1719 < 3933) and (v95 <= (23 + 14))) then
-															if (((5762 - 2533) > (8922 - 6756)) and (v95 <= 35)) then
-																v92[v94[7 - 5]] = v62[v94[(10 + 1528) - (152 + 1383)]];
-															elseif ((v95 > 36) or (4607 <= (2127 - (3124 - 2159)))) then
-																local v227 = 1280 - ((1604 - 1264) + 940);
-																local v228;
-																local v229;
-																while true do
-																	if (((2225 - 1143) <= 3993) and (v227 == (0 + 0))) then
-																		v228 = 0 - 0;
-																		v229 = nil;
-																		v227 = 1 + 0;
-																	end
-																	if ((v227 == 1) or ((2651 - (288 + 252)) >= (5798 - 2780))) then
-																		while true do
-																			if (((6315 - 2585) > (2399 - (413 + 71))) and (v228 == ((0 - 0) + 0 + 0))) then
-																				v229 = v94[2 + 0];
-																				v92[v229](v13(v92, v229 + 1, v94[2 + 1]));
-																				break;
-																			end
-																		end
-																		break;
-																	end
-																end
-															elseif ((v92[v94[6 - 4]] < v92[v94[930 - (38 + 888)]]) or ((493 - (628 - 389)) >= (1030 + 142))) then
-																v81 = v81 + 1 + 0;
-															else
-																v81 = v94[1754 - (1553 + 198)];
-															end
-														elseif (((3693 - (182 + 294)) < (5357 - 1023)) and (v95 <= ((1935 - (1423 + 500)) + 26))) then
-															v62[v94[14 - 11]] = v92[v94[1 + 1]];
-														elseif ((((6393 - 4121) + 1174) < (10680 - 6205)) and (v95 == (16 + 23))) then
-															do
-																return v92[v94[1155 - (583 + 570)]];
-															end
-														else
-															local v230 = 0 - 0;
-															local v231;
-															local v232;
-															while true do
-																if ((v230 == ((3 - 0) - 2)) or (((1274 + 854) - (513 + 348)) > (4446 - (680 + 917)))) then
-																	while true do
-																		if ((v231 == (0 + (0 - 0))) or ((3958 - (54 + 92 + 643)) <= (2317 + 784))) then
-																			v232 = v94[767 - ((1293 - 948) + 420)];
-																			v92[v232](v92[v232 + 1]);
-																			break;
-																		end
-																	end
-																	break;
-																end
-																if (((3748 + 491) > (2093 - (1071 + 21))) and (v230 == (0 - 0))) then
-																	v231 = 0 - 0;
-																	v232 = nil;
-																	v230 = (1810 - (1472 + 337)) + 0;
-																end
-															end
-														end
-														v81 = v81 + (3 - 2);
-														break;
-													end
-												end
-												break;
-											end
-										end
-										break;
-									end
-									if (((5889 - (5576 - (674 + 225))) > (2304 - (97 + 1749))) and (v103 == (0 + 0))) then
-										v104 = 0 - 0;
-										v105 = nil;
-										v103 = 1 + 0;
-									end
-								end
-							end
-						end
-						A, B = v27(v11(v85));
-						if not A[1] then
-							local v106 = 0;
-							local v107;
-							while true do
-								if (v106 == 0) then
-									v107 = v60[4][v81] or "?";
-									error("Script error at [" .. v107 .. "]:" .. A[2]);
-									break;
-								end
-							end
-						else
-							return v13(A, 2, B);
-						end
-					end;
-				end
-			end
-		end
-		return v29(v28(), {}, v17)(...);
-	end
-	v15("LOL!5B3O00028O00026O001040027O0040026O00144003073O004D616B6554616203043O004E616D6503073O0056697375616C7303043O0049636F6E03183O00726278612O73657469643A2O2F3133322O35333937383532030B3O005072656D69756D4F6E6C790100030A3O00412O6453656374696F6E026O00F03F030A3O006C6F6164737472696E6703043O0067616D6503073O00482O747047657403213O00682O7470733A2O2F706173746562696E2E636F6D2F7261772F65356944574B6E5003073O00506C61796572732O0103063O00546F2O676C6503093O00412O64546F2O676C6503073O00426F782045737003043O00466C616703063O00426F7845737003073O0044656661756C7403083O0043612O6C6261636B03083O004E616D652045737003073O004E616D65457370030A3O005472616365722045737003093O00547261636572457370026O001840030B3O00506C61796572204D6F647303193O00726278612O73657469643A2O2F32383639353832393730343203073O00506C724D6F647303063O004E6F636C697003083O00496E66204A756D7003093O00412O64536C69646572030A3O00536D2O6F74686E652O732O033O004D696E2O033O004D6178029A5O99B93F029A5O99A93F03053O00436F6C6F7203063O00436F6C6F723303073O0066726F6D524742025O00E06F4003093O00496E6372656D656E74027B14AE47E17A843F03093O0056616C75654E616D65030B3O0053656E7369746976697479030F3O00464F56436972636C65205369646573026O002O40025O0080704003053O005369646573026O00084003093O005465616D436865636B030B3O00412O6444726F70646F776E03073O004869745061727403043O004865616403073O004F7074696F6E7303103O0048756D616E6F6964522O6F745061727403063O0052616E646F6D03063O0041696D626F7403173O00726278612O73657469643A2O2F2O34382O3334352O393803113O00464F56436972636C652056697369626C652O033O00464F56026O003E40025O00407F40026O00544003063O0052616469757303103O00464F56205472616E73706172656E6379030C3O005472616E73706172656E6379030D3O00464F5620546869636B6E652O7303093O00546869636B6E652O73030E3O00412O64436F6C6F727069636B6572030F3O00464F56436972636C6520436F6C6F72033D3O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F73686C6578776172652F4F72696F6E2F6D61696E2F736F75726365030B3O004C6F63616C506C61796572030A3O004D616B6557696E646F77031A3O00526164697368204875622O7C4E6F53636F70652041726361646503093O00496E74726F54657874030A3O0052616469736820487562030B3O00486964655072656D69756D030A3O0053617665436F6E666967030C3O00436F6E666967466F6C64657203193O0052616469736820487562204E6F53636F70652041726361646503103O004D616B654E6F74696669636174696F6E03073O00436F6E74656E7403273O0052656D656D62657220757064617465732061726520616C77617973206F6E20746865207761792103053O00496D61676503043O0054696D650045012O0012183O00014O0003000100083O000E1C0002002500013O0004103O00250001001218000900013O00262000090009000100030004103O000900010012183O00043O0004103O0025000100262000090018000100010004103O0018000100200F000A000300052O0004000C3O0003003001000C00060007003001000C00080009003001000C000A000B2O001E000A000C00022O00110006000A3O00200F000A0006000C2O0004000C3O0001003001000C000600072O001E000A000C00022O00110005000A3O0012180009000D3O000E1C000D0005000100090004103O00050001001223000A000E3O001223000B000F3O00200F000B000B0010001218000D00114O0019000B000D4O000E000A3O00022O0002000A000100022O00110007000A3O003001000700120013001218000900033O0004103O00050001000E1C0004004600013O0004103O0046000100200F0009000700142O0014000B00014O00250009000B000100200F0009000600152O0004000B3O0004003001000B00060016003001000B00170018003001000B0019000B00060D000C3O000100012O00113O00073O001017000B001A000C2O00250009000B000100200F0009000600152O0004000B3O0004003001000B0006001B003001000B0017001C003001000B0019000B00060D000C0001000100012O00113O00073O001017000B001A000C2O00250009000B000100200F0009000600152O0004000B3O0004003001000B0006001D003001000B0017001E003001000B0019000B00060D000C0002000100012O00113O00073O001017000B001A000C2O00250009000B00010012183O001F3O000E1C001F006500013O0004103O0065000100200F0009000300052O0004000B3O0003003001000B00060020003001000B00080021003001000B000A000B2O001E0009000B00022O0011000800093O00200F00090008000C2O0004000B3O0001003001000B000600222O001E0009000B00022O0011000500093O00200F0009000800152O0004000B3O0004003001000B00060023003001000B00170023003001000B0019000B000213000C00033O001017000B001A000C2O00250009000B000100200F0009000800152O0004000B3O0004003001000B00060024003001000B00170024003001000B0019000B000213000C00043O001017000B001A000C2O00250009000B00010004103O00432O01000E1C000300AB00013O0004103O00AB0001001218000900013O0026200009008F0001000D0004103O008F000100200F000A000400252O0004000C3O0008003001000C00060026003001000C00270001003001000C00280029003001000C0019002A001223000D002C3O002005000D000D002D001218000E002E3O001218000F002E3O0012180010002E4O001E000D00100002001017000C002B000D003001000C002F0030003001000C00310032000213000D00053O001017000C001A000D2O0025000A000C000100200F000A000400252O0004000C3O0008003001000C00060033003001000C00270034003001000C00280035003001000C00190034001223000D002C3O002005000D000D002D001218000E002E3O001218000F002E3O0012180010002E4O001E000D00100002001017000C002B000D003001000C002F000D003001000C00310036000213000D00063O001017000C001A000D2O0025000A000C0001001218000900033O00262000090093000100030004103O009300010012183O00373O0004103O00AB000100262000090068000100010004103O0068000100200F000A000400152O0004000C3O0003003001000C00060038003001000C0019000B000213000D00073O001017000C001A000D2O0025000A000C000100200F000A000400392O0004000C3O0004003001000C0006003A003001000C0019003B2O0004000D00033O001218000E003B3O001218000F003D3O0012180010003E4O0015000D00030001001017000C003C000D000213000D00083O001017000C001A000D2O0025000A000C00010012180009000D3O0004103O006800010026203O00D30001000D0004103O00D30001001218000900013O000E1C000300B2000100090004103O00B200010012183O00033O0004103O00D30001002620000900C1000100010004103O00C1000100200F000A000300052O0004000C3O0003003001000C0006003F003001000C00080040003001000C000A000B2O001E000A000C00022O00110004000A3O00200F000A0004000C2O0004000C3O0001003001000C0006003F2O001E000A000C00022O00110005000A3O0012180009000D3O002620000900AE0001000D0004103O00AE000100200F000A000400152O0004000C3O0003003001000C0006003F003001000C0019000B000213000D00093O001017000C001A000D2O0025000A000C000100200F000A000400152O0004000C3O0003003001000C00060041003001000C0019000B000213000D000A3O001017000C001A000D2O0025000A000C0001001218000900033O0004103O00AE00010026203O00242O0100370004103O00242O01001218000900013O000E1C000100FD000100090004103O00FD000100200F000A000400252O0004000C3O0008003001000C00060042003001000C00270043003001000C00280044003001000C00190045001223000D002C3O002005000D000D002D001218000E002E3O001218000F002E3O0012180010002E4O001E000D00100002001017000C002B000D003001000C002F000D003001000C00310046000213000D000B3O001017000C001A000D2O0025000A000C000100200F000A000400252O0004000C3O0008003001000C00060047003001000C00270001003001000C0028000D003001000C0019000D001223000D002C3O002005000D000D002D001218000E002E3O001218000F002E3O0012180010002E4O001E000D00100002001017000C002B000D003001000C002F0029003001000C00310048000213000D000C3O001017000C001A000D2O0025000A000C00010012180009000D3O0026200009001F2O01000D0004103O001F2O0100200F000A000400252O0004000C3O0008003001000C00060049003001000C00270001003001000C00280043003001000C0019000D001223000D002C3O002005000D000D002D001218000E002E3O001218000F002E3O0012180010002E4O001E000D00100002001017000C002B000D003001000C002F000D003001000C0031004A000213000D000D3O001017000C001A000D2O0025000A000C000100200F000A0004004B2O0004000C3O0003003001000C0006004C001223000D002C3O002005000D000D002D001218000E002E3O001218000F002E3O0012180010002E4O001E000D00100002001017000C0019000D000213000D000E3O001017000C001A000D2O0025000A000C0001001218000900033O002620000900D6000100030004103O00D600010012183O00023O0004103O00242O010004103O00D600010026203O0002000100010004103O000200010012230009000E3O001223000A000F3O00200F000A000A0010001218000C004D4O0019000A000C4O000E00093O00022O00020009000100022O0011000100093O0012230009000F3O00200500090009001200200500020009004E00200F00090001004F2O0004000B3O0005003001000B00060050003001000B00510052003001000B0053000B003001000B00540013003001000B005500562O001E0009000B00022O0011000300093O00200F0009000100572O0004000B3O0004003001000B00060052003001000B00580059003001000B005A0040003001000B005B00042O00250009000B00010012183O000D3O0004103O000200012O001F8O00083O00013O000F3O00013O0003053O00426F78657301034O000900015O001017000100014O00083O00017O00033O00223O00223O00233O00013O0003053O004E616D657301034O000900015O001017000100014O00083O00017O00033O00253O00253O00263O00013O0003073O005472616365727301034O000900015O001017000100014O00083O00017O00033O00283O00283O00293O00073O00028O0003063O004E6F636C69702O01030A3O006C6F6164737472696E6703043O0067616D6503073O00482O747047657403213O00682O7470733A2O2F706173746562696E2E636F6D2F7261772F394672563070616801113O001218000100013O00262000010001000100010004103O000100010012263O00023O001223000200023O00262000020010000100030004103O00100001001223000200043O001223000300053O00200F000300030006001218000500074O0019000300054O000E00023O00022O001B0002000100010004103O001000010004103O000100012O00083O00017O00113O00303O00323O00323O00333O00343O00343O00343O00353O00353O00353O00353O00353O00353O00353O00373O00383O003A3O00103O00028O0003073O00496E664A756D702O01026O00F03F03043O0067616D65030A3O004765745365727669636503073O00506C6179657273030B3O004C6F63616C506C6179657203103O0055736572496E70757453657276696365027O0040030A3O00496E707574426567616E03073O00636F2O6E65637403023O005F47030A3O004A756D70486569676874026O00494003063O00416374696F6E014A3O001218000100014O0003000200023O00262000010002000100010004103O00020001001218000200013O00262000020005000100010004103O000500010012263O00023O001223000300023O00262000030049000100030004103O00490001001218000300014O0003000400063O00262000030012000100010004103O00120001001218000400014O0003000500053O001218000300043O0026200003000D000100040004103O000D00012O0003000600063O0026200004002A000100010004103O002A0001001218000700013O000E1C00010025000100070004103O00250001001223000800053O00200F000800080006001218000A00074O001E0008000A0002002005000500080008001223000800053O00200F000800080006001218000A00094O001E0008000A00022O0011000600083O001218000700043O000E1C00040018000100070004103O00180001001218000400043O0004103O002A00010004103O00180001002620000400320001000A0004103O0032000100200500070006000B00200F00070007000C00060D00093O000100012O00113O00054O00250007000900010004103O0044000100262000040015000100040004103O00150001001218000700013O0026200007003C000100010004103O003C00010012230008000D3O0030010008000E000F000213000800013O001226000800103O001218000700043O000E1C00040035000100070004103O003500010012180004000A3O0004103O001500010004103O003500010004103O001500010004103O004400010004103O000D00012O001F00035O0004103O004900010004103O000500010004103O004900010004103O000200012O00083O00013O00023O00083O00030D3O0055736572496E7075745479706503043O00456E756D03083O004B6579626F61726403073O004B6579436F646503053O00537061636503063O00416374696F6E03093O0043686172616374657203083O0048756D616E6F696401133O00200500013O0001001223000200023O00200500020002000100200500020002000300061200010012000100020004103O0012000100200500013O0004001223000200023O00200500020002000400200500020002000500061200010012000100020004103O00120001001223000100064O000900025O00200500020002000700200500020002000800021300036O00250001000300012O00083O00013O00013O00083O0003083O00476574537461746503043O00456E756D03113O0048756D616E6F696453746174655479706503073O004A756D70696E6703083O0046722O6566612O6C03063O00416374696F6E03063O00506172656E7403103O0048756D616E6F6964522O6F745061727401143O00200F00013O00012O001A000100020002001223000200023O0020050002000200030020050002000200040006070001000E000100020004103O000E000100200F00013O00012O001A000100020002001223000200023O00200500020002000300200500020002000500061200010013000100020004103O00130001001223000100063O00200500023O000700200500020002000800021300036O00250001000300012O00083O00013O00013O00063O0003083O0056656C6F6369747903073O00566563746F72332O033O006E6577028O0003023O005F47030A3O004A756D7048656967687401093O001223000100023O002005000100010003001218000200043O001223000300053O002005000300030006001218000400044O001E0001000400020010173O000100012O00083O00017O00093O00663O00663O00663O00663O00663O00663O00663O00663O00673O00143O00643O00643O00643O00643O00643O00643O00643O00643O00643O00643O00643O00643O00643O00643O00653O00653O00653O00673O00653O00693O00133O00623O00623O00623O00623O00623O00623O00623O00623O00623O00623O00623O00623O00633O00633O00633O00633O00693O00633O006B3O00014O0002063O0026063O0005000100010004103O000500012O0011000200014O001100036O00280002000200012O00083O00017O00063O00743O00743O00753O00753O00753O00773O004A3O003C3O003D3O003F3O003F3O00403O00423O00423O00433O00443O00443O00443O00453O00463O004A3O004A3O004B3O004C3O004D3O004F3O004F3O00503O00523O00523O00533O00553O00553O00563O00563O00563O00563O00563O00573O00573O00573O00573O00573O00583O005A3O005A3O005B3O005C3O005D3O00603O00603O00613O00613O006B3O006B3O00613O006C3O006E3O006E3O006F3O00713O00713O00723O00723O00773O00733O00783O007A3O007A3O007B3O007C3O007D3O007F3O00813O00823O00833O00853O00863O00883O00893O008B3O00023O0003023O005F47030A3O00536D2O6F74686E652O7301033O001223000100013O001017000100024O00083O00017O00033O00933O00933O00943O00023O0003023O005F47030B3O00436972636C65536964657301033O001223000100013O001017000100024O00083O00017O00033O00963O00963O00973O00023O0003023O005F4703093O005465616D436865636B01033O001223000100013O001017000100024O00083O00017O00033O00A03O00A03O00A13O00023O0003023O005F4703073O0041696D5061727401033O001223000100013O001017000100024O00083O00017O00033O00A33O00A33O00A43O00343O0003043O0067616D65030A3O004765745365727669636503073O00506C6179657273030B3O004C6F63616C506C6179657203093O00776F726B7370616365030D3O0043752O72656E7443616D657261030A3O0052756E5365727669636503103O0055736572496E70757453657276696365030C3O0054772O656E5365727669636503023O005F4703093O005465616D436865636B03093O007465616D636865636B030D3O0041696D626F74456E61626C656403073O0041696D5061727403043O0048656164030B3O0053656E7369746976697479029A5O99A93F030B3O00436972636C655369646573026O003840030B3O00436972636C65436F6C6F7203063O00436F6C6F723303073O0066726F6D524742025O00E06F4003123O00436972636C655472616E73706172656E6379029A5O99D93F030C3O00436972636C65526164697573026O005440030C3O00436972636C6546692O6C65640100030D3O00436972636C6556697369626C65030F3O00436972636C65546869636B6E652O73028O0003073O0044726177696E672O033O006E657703063O00436972636C6503083O00506F736974696F6E03073O00566563746F7232030C3O0056696577706F727453697A6503013O0058027O004003013O005903063O0052616469757303063O0046692O6C656403053O00436F6C6F7203073O0056697369626C65030C3O005472616E73706172656E637903083O004E756D536964657303093O00546869636B6E652O73030A3O00496E707574426567616E03073O00436F2O6E656374030A3O00496E707574456E646564030D3O0052656E6465725374652O706564016E3O001223000100013O00200F000100010002001218000300034O001E000100030002002005000200010004001223000300053O002005000300030006001223000400013O00200F000400040002001218000600074O001E000400060002001223000500013O00200F000500050002001218000700084O001E000500070002001223000600013O00200F000600060002001218000800094O001E0006000800022O001400075O0012230008000A3O0012230009000C3O0010170008000B00090012230008000A3O0010170008000D3O0012230008000A3O0030010008000E000F0012230008000A3O0030010008001000110012230008000A3O0030010008001200130012230008000A3O001223000900153O002005000900090016001218000A00173O001218000B00173O001218000C00174O001E0009000C00020010170008001400090012230008000A3O0030010008001800190012230008000A3O0030010008001A001B0012230008000A3O0030010008001C001D0012230008000A3O0030010008001E001D0012230008000A3O0030010008001F0020001223000800213O002005000800080022001218000900234O001A000800020002001223000900253O002005000900090022002005000A00030026002005000A000A002700200A000A000A0028002005000B00030026002005000B000B002900200A000B000B00282O001E0009000B00020010170008002400090012230009000A3O00200500090009001A0010170008002A00090012230009000A3O00200500090009001C0010170008002B00090012230009000A3O0020050009000900140010170008002C00090012230009000A3O00200500090009001E0010170008002D00090012230009000A3O0020050009000900180010170008002E00090012230009000A3O0020050009000900120010170008002F00090012230009000A3O00200500090009001F00101700080030000900060D00093O000100042O00113O00014O00113O00024O00113O00034O00113O00053O002005000A0005003100200F000A000A003200060D000C0001000100012O00113O00074O0025000A000C0001002005000A0005003300200F000A000A003200060D000C0002000100012O00113O00074O0025000A000C0001002005000A0004003400200F000A000A003200060D000C0003000100062O00113O00084O00113O00074O00113O00064O00113O00034O00113O00094O00113O00054O0025000A000C00012O00083O00013O00043O001B3O00028O00026O00F03F03023O005F47030C3O00436972636C6552616469757303043O006E657874030A3O00476574506C617965727303043O004E616D6503093O005465616D436865636B2O0103043O005465616D03093O0043686172616374657200030E3O0046696E6446697273744368696C6403103O0048756D616E6F6964522O6F745061727403083O0048756D616E6F696403063O004865616C746803123O00576F726C64546F5363722O656E506F696E74030C3O0057616974466F724368696C6403043O006D61746803043O006875676503083O00506F736974696F6E03073O00566563746F72322O033O006E657703103O004765744D6F7573654C6F636174696F6E03013O005803013O005903093O004D61676E697475646500BC3O0012183O00014O0003000100033O0026203O0007000100010004103O00070001001218000100014O0003000200023O0012183O00023O0026203O0002000100020004103O000200012O0003000300033O001218000400013O0026200004000B000100010004103O000B000100262000010013000100010004103O00130001001223000500033O0020050002000500042O0003000300033O001218000100023O0026200001000A000100020004103O000A0001001218000500013O00262000050016000100010004103O00160001001223000600054O000900075O00200F0007000700062O00160007000200080004103O00B20001002005000B000A00072O0009000C00013O002005000C000C0007000607000B00B20001000C0004103O00B20001001223000B00033O002005000B000B0008002620000B0061000100090004103O00610001002005000B000A000A2O0009000C00013O002005000C000C000A000607000B00B20001000C0004103O00B20001002005000B000A000B002606000B00B20001000C0004103O00B20001002005000B000A000B00200F000B000B000D001218000D000E4O001E000B000D0002002606000B00B20001000C0004103O00B20001002005000B000A000B00200F000B000B000D001218000D000F4O001E000B000D0002002606000B00B20001000C0004103O00B20001002005000B000A000B00200F000B000B000D001218000D000F4O001E000B000D0002002005000B000B0010002606000B00B2000100010004103O00B200012O0009000B00023O00200F000B000B0011002005000D000A000B00200F000D000D0012001218000F000E3O001223001000133O0020050010001000142O001E000D00100002002005000D000D00152O001E000B000D0002001223000C00163O002005000C000C00172O0009000D00033O00200F000D000D00182O001A000D00020002002005000D000D00192O0009000E00033O00200F000E000E00182O001A000E00020002002005000E000E001A2O001E000C000E0002001223000D00163O002005000D000D0017002005000E000B0019002005000F000B001A2O001E000D000F00024O000C000C000D002005000C000C001B000624000C00B2000100020004103O00B200012O00110003000A3O0004103O00B20001002005000B000A000B002606000B00B20001000C0004103O00B20001002005000B000A000B00200F000B000B000D001218000D000E4O001E000B000D0002002606000B00B20001000C0004103O00B20001002005000B000A000B00200F000B000B000D001218000D000F4O001E000B000D0002002606000B00B20001000C0004103O00B20001002005000B000A000B00200F000B000B000D001218000D000F4O001E000B000D0002002005000B000B0010002606000B00B2000100010004103O00B20001001218000B00014O0003000C000E3O000E1C000200AC0001000B0004103O00AC00012O0003000E000E3O002620000C0082000100020004103O00820001000624000E00B2000100020004103O00B200012O00110003000A3O0004103O00B20001002620000C007C000100010004103O007C0001001218000F00013O000E1C000200890001000F0004103O00890001001218000C00023O0004103O007C0001000E1C000100850001000F0004103O008500012O0009001000023O00200F0010001000110020050012000A000B00200F0012001200120012180014000E3O001223001500133O0020050015001500142O001E0012001500020020050012001200152O001E0010001200022O0011000D00103O001223001000163O0020050010001000172O0009001100033O00200F0011001100182O001A0011000200020020050011001100192O0009001200033O00200F0012001200182O001A00120002000200200500120012001A2O001E001000120002001223001100163O0020050011001100170020050012000D00190020050013000D001A2O001E0011001300024O001000100011002005000E0010001B001218000F00023O0004103O008500010004103O007C00010004103O00B20001002620000B0079000100010004103O00790001001218000C00014O0003000D000D3O001218000B00023O0004103O007900010006220006001D000100020004103O001D00012O0027000300023O0004103O001600010004103O000A00010004103O000B00010004103O000A00010004103O00BB00010004103O000200012O00083O00017O00BC3O00D33O00D43O00D83O00D83O00D93O00DA3O00DB3O00DD3O00DD3O00DE3O00E03O00E23O00E23O00E33O00E33O00E43O00E43O00E53O00E63O00E83O00E83O00E93O00EB3O00EB3O00EC3O00EC3O00EC3O00EC3O00EC3O00ED3O00ED3O00ED3O00ED3O00ED3O00EE3O00EE3O00EE3O00EE3O00EF3O00EF3O00EF3O00EF3O00EF3O00F03O00F03O00F03O00F13O00F13O00F13O00F13O00F13O00F13O00F23O00F23O00F23O00F23O00F23O00F23O00F23O00F23O00F23O00F23O00F23O00F23O00F23O00F33O00F33O00F33O00F33O00F33O00F33O00F33O00F33O00F33O00F33O00F43O00F43O00F43O00F43O00F43O00F43O00F43O00F43O00F43O00F43O00F43O00F43O00F43O00F43O00F43O00F43O00F43O00F43O00F53O00F53O00F63O00FB3O00FC3O00FC3O00FC3O00FD3O00FD3O00FD3O00FD3O00FD3O00FD3O00FE3O00FE3O00FE3O00FE3O00FE3O00FE3O00FE3O00FE3O00FE3O00FE3O00FE3O00FE3O00FE3O00FF4O00012O0004012O0004012O0005012O0007012O0007012O0008012O0008012O0009012O000B012O000D012O000D012O000E012O0010012O0010012O0011012O0012012O0014012O0014012O0015012O0015012O0015012O0015012O0015012O0015012O0015012O0015012O0015012O0015012O0015012O0016012O0016012O0016012O0016012O0016012O0016012O0016012O0016012O0016012O0016012O0016012O0016012O0016012O0016012O0016012O0016012O0016012O0016012O0017012O0018012O001A012O001C012O001E012O001E012O001F012O0020012O0021012O0022012O00EC3O0027012O0029012O002A012O002D012O002E012O002F012O0031012O0032012O0034012O00033O00030D3O0055736572496E7075745479706503043O00456E756D030C3O004D6F75736542752O746F6E3201093O00200500013O0001001223000200023O00200500020002000100200500020002000300061200010008000100020004103O000800012O0014000100014O000C00016O00083O00017O00093O0036012O0036012O0036012O0036012O0036012O0036012O0037012O0037012O0039012O00033O00030D3O0055736572496E7075745479706503043O00456E756D030C3O004D6F75736542752O746F6E3201093O00200500013O0001001223000200023O00200500020002000100200500020002000300061200010008000100020004103O000800012O001400016O000C00016O00083O00017O00093O003B012O003B012O003B012O003B012O003B012O003B012O003C012O003C012O003E012O00283O00028O00026O00084003083O004E756D536964657303023O005F47030B3O00436972636C65536964657303093O00546869636B6E652O73030F3O00436972636C65546869636B6E652O73026O00F03F026O0010402O01030D3O0041696D626F74456E61626C656403063O0043726561746503093O0054772O656E496E666F2O033O006E6577030B3O0053656E736974697669747903043O00456E756D030B3O00456173696E675374796C6503043O0053696E65030F3O00456173696E67446972656374696F6E2O033O004F757403063O00434672616D6503083O00506F736974696F6E03093O0043686172616374657203073O0041696D5061727403043O00506C617903073O00566563746F723203103O004765744D6F7573654C6F636174696F6E03013O005803013O005903063O00526164697573030C3O00436972636C65526164697573027O004003073O0056697369626C65030D3O00436972636C6556697369626C65030C3O005472616E73706172656E637903123O00436972636C655472616E73706172656E637903063O0046692O6C6564030C3O00436972636C6546692O6C656403053O00436F6C6F72030B3O00436972636C65436F6C6F7200883O0012183O00014O0003000100013O0026203O0002000100010004103O00020001001218000100013O00262000010018000100020004103O00180001001218000200013O00262000020013000100010004103O001300012O000900035O001223000400043O0020050004000400050010170003000300042O000900035O001223000400043O002005000400040007001017000300060004001218000200083O00262000020008000100080004103O00080001001218000100093O0004103O001800010004103O0008000100262000010042000100090004103O004200012O0009000200013O002620000200870001000A0004103O00870001001223000200043O00200500020002000B002620000200870001000A0004103O008700012O0009000200023O00200F00020002000C2O0009000400033O0012230005000D3O00200500050005000E001223000600043O00200500060006000F001223000700103O002005000700070011002005000700070012001223000800103O0020050008000800130020050008000800142O001E0005000800022O000400063O0001001223000700153O00200500070007000E2O0009000800033O0020050008000800150020050008000800162O0009000900044O0002000900010002002005000900090017001223000A00043O002005000A000A00182O001D00090009000A0020050009000900162O001E0007000900020010170006001500072O001E00020006000200200F0002000200192O00280002000200010004103O008700010026200001005E000100010004103O005E0001001218000200013O00262000020049000100080004103O00490001001218000100083O0004103O005E0001000E1C00010045000100020004103O004500012O000900035O0012230004001A3O00200500040004000E2O0009000500053O00200F00050005001B2O001A00050002000200200500050005001C2O0009000600053O00200F00060006001B2O001A00060002000200200500060006001D2O001E0004000600020010170003001600042O000900035O001223000400043O00200500040004001F0010170003001E0004001218000200083O0004103O0045000100262000010071000100200004103O00710001001218000200013O0026200002006C000100010004103O006C00012O000900035O001223000400043O0020050004000400220010170003002100042O000900035O001223000400043O002005000400040024001017000300230004001218000200083O00262000020061000100080004103O00610001001218000100023O0004103O007100010004103O0061000100262000010005000100080004103O00050001001218000200013O0026200002007F000100010004103O007F00012O000900035O001223000400043O0020050004000400260010170003002500042O000900035O001223000400043O002005000400040028001017000300270004001218000200083O00262000020074000100080004103O00740001001218000100203O0004103O000500010004103O007400010004103O000500010004103O008700010004103O000200012O00083O00017O00883O0040012O0041012O0043012O0043012O0044012O0046012O0046012O0047012O0049012O0049012O004A012O004A012O004A012O004A012O004B012O004B012O004B012O004B012O004C012O004E012O004E012O004F012O0050012O0051012O0054012O0054012O0055012O0055012O0055012O0055012O0055012O0055012O0055012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0056012O0058012O005A012O005A012O005B012O005D012O005D012O005E012O005F012O0061012O0061012O0062012O0062012O0062012O0062012O0062012O0062012O0062012O0062012O0062012O0062012O0062012O0062012O0062012O0063012O0063012O0063012O0063012O0064012O0065012O0068012O0068012O0069012O006B012O006B012O006C012O006C012O006C012O006C012O006D012O006D012O006D012O006D012O006E012O0070012O0070012O0071012O0072012O0073012O0076012O0076012O0077012O0079012O0079012O007A012O007A012O007A012O007A012O007B012O007B012O007B012O007B012O007C012O007E012O007E012O007F012O0080012O0081012O0083012O0085012O0086012O0088012O006E3O00B73O00B73O00B73O00B73O00B83O00B93O00B93O00BA3O00BA3O00BA3O00BA3O00BB3O00BB3O00BB3O00BB3O00BC3O00BC3O00BC3O00BC3O00BD3O00BE3O00BE3O00BE3O00BF3O00BF3O00C03O00C03O00C13O00C13O00C23O00C23O00C33O00C33O00C33O00C33O00C33O00C33O00C33O00C33O00C43O00C43O00C53O00C53O00C63O00C63O00C73O00C73O00C83O00C83O00C93O00C93O00C93O00C93O00CA3O00CA3O00CA3O00CA3O00CA3O00CA3O00CA3O00CA3O00CA3O00CA3O00CB3O00CB3O00CB3O00CC3O00CC3O00CC3O00CD3O00CD3O00CD3O00CE3O00CE3O00CE3O00CF3O00CF3O00CF3O00D03O00D03O00D03O00D13O00D13O00D13O0034012O0034012O0034012O0034012O0034012O0035012O0035012O0039012O0039012O0035012O003A012O003A012O003E012O003E012O003A012O003F012O003F012O0088012O0088012O0088012O0088012O0088012O0088012O0088012O003F012O0089012O00023O0003023O005F47030D3O00436972636C6556697369626C6501033O001223000100013O001017000100024O00083O00017O00033O008B012O008B012O008C012O00023O0003023O005F47030C3O00436972636C6552616469757301033O001223000100013O001017000100024O00083O00017O00033O0096012O0096012O0097012O00023O0003023O005F4703123O00436972636C655472616E73706172656E637901033O001223000100013O001017000100024O00083O00017O00033O0099012O0099012O009A012O00023O0003023O005F47030F3O00436972636C65546869636B6E652O7301033O001223000100013O001017000100024O00083O00017O00033O009F012O009F012O00A0012O00023O0003023O005F47030B3O00436972636C65436F6C6F7201033O001223000100013O001017000100024O00083O00017O00033O00A2012O00A2012O00A3012O0045012O00023O00033O000C3O000C3O000D3O000F3O000F3O00103O00113O00133O00133O00143O00143O00143O00143O00143O00143O00143O00153O00153O00153O00153O00153O00163O00183O00183O00193O00193O00193O00193O00193O00193O00193O00193O001A3O001B3O001C3O001F3O001F3O00203O00203O00203O00213O00213O00213O00213O00213O00233O00233O00233O00213O00243O00243O00243O00243O00243O00263O00263O00263O00243O00273O00273O00273O00273O00273O00293O00293O00293O00273O002A3O002C3O002C3O002D3O002D3O002D3O002D3O002D3O002D3O002D3O002E3O002E3O002E3O002E3O002E3O002F3O002F3O002F3O002F3O002F3O003A3O003A3O002F3O003B3O003B3O003B3O003B3O003B3O008B3O008B3O003B3O008C3O008E3O008E3O008F3O00913O00913O00923O00923O00923O00923O00923O00923O00923O00923O00923O00923O00923O00923O00923O00923O00923O00943O00943O00923O00953O00953O00953O00953O00953O00953O00953O00953O00953O00953O00953O00953O00953O00953O00953O00973O00973O00953O00983O009A3O009A3O009B3O009C3O009E3O009E3O009F3O009F3O009F3O009F3O00A13O00A13O009F3O00A23O00A23O00A23O00A23O00A23O00A23O00A23O00A23O00A23O00A23O00A43O00A43O00A23O00A53O00A63O00A93O00A93O00AA3O00AC3O00AC3O00AD3O00AE3O00B03O00B03O00B13O00B13O00B13O00B13O00B13O00B13O00B13O00B23O00B23O00B23O00B23O00B23O00B33O00B53O00B53O00B63O00B63O00B63O00B63O0089012O0089012O00B63O008A012O008A012O008A012O008A012O008C012O008C012O008A012O008D012O008E012O0091012O0091012O0092012O0094012O0094012O0095012O0095012O0095012O0095012O0095012O0095012O0095012O0095012O0095012O0095012O0095012O0095012O0095012O0095012O0095012O0097012O0097012O0095012O0098012O0098012O0098012O0098012O0098012O0098012O0098012O0098012O0098012O0098012O0098012O0098012O0098012O0098012O0098012O009A012O009A012O0098012O009B012O009D012O009D012O009E012O009E012O009E012O009E012O009E012O009E012O009E012O009E012O009E012O009E012O009E012O009E012O009E012O009E012O009E012O00A0012O00A0012O009E012O00A1012O00A1012O00A1012O00A1012O00A1012O00A1012O00A1012O00A1012O00A1012O00A1012O00A3012O00A3012O00A1012O00A4012O00A6012O00A6012O00A7012O00A8012O00A9012O00AC012O00AC012O00AD012O00AD012O00AD012O00AD012O00AD012O00AD012O00AD012O00AD012O00AE012O00AE012O00AE012O00AF012O00AF012O00AF012O00AF012O00AF012O00AF012O00AF012O00AF012O00AF012O00B0012O00B0012O00B0012O00B0012O00B0012O00B0012O00B0012O00B1012O00B2012O00B3012O00B4012O00", v9(), ...);
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+
+local Window = OrionLib:MakeWindow({Name = "Radish Hub||NoScope Arcade", IntroText = "Radish Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Radish Hub NoScope Arcade"})
+
+
+
+OrionLib:MakeNotification({
+	Name = "Radish Hub",
+	Content = "Remember updates are always on the way!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+
+
+--Aimbot
+
+local AimbotTab = Window:MakeTab({
+	Name = "Aimbot",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = AimbotTab:AddSection({
+	Name = "Aimbot"
+})
+
+AimbotTab:AddToggle({
+	Name = "Aimbot",
+	Default = false,
+	Callback = function(Value)
+		local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local Camera = workspace.CurrentCamera
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+local Holding = false
+
+
+--AIMBOT SETTINGS
+
+_G.TeamCheck = teamcheck
+_G.AimbotEnabled = Value
+_G.AimPart = "Head"
+_G.Sensitivity = 0.05
+
+--FCIRCLE SETTINGS
+
+_G.CircleSides = 24
+_G.CircleColor = Color3.fromRGB(255,255,255)
+_G.CircleTransparency = 0.4
+_G.CircleRadius = 80
+_G.CircleFilled = false
+_G.CircleVisible = false
+_G.CircleThickness = 0
+
+local FCircle = Drawing.new("Circle")
+FCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+FCircle.Radius = _G.CircleRadius
+FCircle.Filled = _G.CircleFilled
+FCircle.Color = _G.CircleColor
+FCircle.Visible = _G.CircleVisible
+FCircle.Transparency = _G.CircleTransparency
+FCircle.NumSides = _G.CircleSides
+FCircle.Thickness = _G.CircleThickness
+
+local function GetClosestPlayer()
+    local MaximumDistance = _G.CircleRadius
+    local Target = nil
+
+    for _, v in next, Players:GetPlayers() do
+        if v.Name ~= LocalPlayer.Name then
+            if _G.TeamCheck == true then
+                if v.Team ~= LocalPlayer.Team then
+                    if v.Character ~= nil then
+                        if v.Character:FindFirstChild("HumanoidRootPart") ~= nil then
+                            if v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+                                local ScreenPoint = Camera:WorldToScreenPoint(v.Character:WaitForChild("HumanoidRootPart", math.huge).Position)
+                                local VectorDistance = (Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y) - Vector2.new(ScreenPoint.X, ScreenPoint.Y)).Magnitude
+
+                                if VectorDistance < MaximumDistance then
+                                    Target = v
+                                end
+                            end
+                        end
+                    end
+                end
+            else
+                 if v.Character ~= nil then
+                    if v.Character:FindFirstChild("HumanoidRootPart") ~= nil then
+                        if v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("Humanoid").Health ~= 0 then
+                            local ScreenPoint = Camera:WorldToScreenPoint(v.Character:WaitForChild("HumanoidRootPart", math.huge).Position)
+                            local VectorDistance = (Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y) - Vector2.new(ScreenPoint.X, ScreenPoint.Y)).Magnitude
+            
+                            if VectorDistance < MaximumDistance then
+                            Target = v
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    return Target
 end
+
+UserInputService.InputBegan:Connect(function(Input)
+    if Input.UserInputType == Enum.UserInputType.MouseButton2 then
+        Holding = true
+    end
+end)
+
+UserInputService.InputEnded:Connect(function(Input)
+    if Input.UserInputType == Enum.UserInputType.MouseButton2 then
+        Holding = false
+    end
+end)
+
+RunService.RenderStepped:Connect(function()
+    FCircle.Position = Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y)
+    FCircle.Radius = _G.CircleRadius
+    FCircle.Filled = _G.CircleFilled
+    FCircle.Color = _G.CircleColor
+    FCircle.Visible = _G.CircleVisible
+    FCircle.Transparency = _G.CircleTransparency
+    FCircle.NumSides = _G.CircleSides
+    FCircle.Thickness = _G.CircleThickness
+    if Holding == true and _G.AimbotEnabled == true then
+        TweenService:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {CFrame = CFrame.new(Camera.CFrame.Position, GetClosestPlayer().Character[_G.AimPart].Position)}):Play()
+    end
+end)
+	end    
+})
+
+AimbotTab:AddToggle({
+	Name = "FOVCircle Visible",
+	Default = false,
+	Callback = function(visibles)
+		_G.CircleVisible = visibles
+	end    
+})
+
+AimbotTab:AddToggle({
+	Name = "TeamCheck",
+	Default = false,
+	Callback = function(teamcheck)
+		_G.TeamCheck = teamcheck
+	end    
+})
+
+AimbotTab:AddDropdown({
+	Name = "HitPart",
+	Default = "Head",
+	Options = {"Head", "HumanoidRootPart", "Random"},
+	Callback = function(hitpartdd)
+		_G.AimPart = hitpartdd
+	end    
+})
+
+AimbotTab:AddSlider({
+	Name = "Smoothness",
+	Min = 0,
+	Max = 0.1,
+	Default = 0.05,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 0.01,
+	ValueName = "Sensitivity",
+	Callback = function(smooth)
+		_G.Smoothness = smooth
+	end    
+})
+
+AimbotTab:AddSlider({
+	Name = "FOVCircle Sides",
+	Min = 32,
+	Max = 264,
+	Default = 32,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Sides",
+	Callback = function(sides)
+		_G.CircleSides = sides
+	end    
+})
+
+AimbotTab:AddSlider({
+	Name = "FOV",
+	Min = 30,
+	Max = 500,
+	Default = 80,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Radius",
+	Callback = function(radius)
+		_G.CircleRadius = radius
+	end    
+})
+
+AimbotTab:AddSlider({
+	Name = "FOV Transparency",
+	Min = 0,
+	Max = 1,
+	Default = 1,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 0.1,
+	ValueName = "Transparency",
+	Callback = function(tranquil)
+		_G.CircleTransparency = tranquil
+	end    
+})
+
+AimbotTab:AddSlider({
+	Name = "FOV Thickness",
+	Min = 0,
+	Max = 30,
+	Default = 1,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Thickness",
+	Callback = function(joebiden)
+		_G.CircleThickness = joebiden
+	end    
+})
+
+AimbotTab:AddColorpicker({
+	Name = "FOVCircle Color",
+	Default = Color3.fromRGB(255, 255, 255),
+	Callback = function(color)
+		_G.CircleColor = (color)
+	end	  
+})
+
+--Visuals
+local VisualsTab = Window:MakeTab({
+	Name = "Visuals",
+	Icon = "rbxassetid://13255397852",
+	PremiumOnly = false
+})
+
+local Section = VisualsTab:AddSection({
+	Name = "Visuals"
+})
+
+local EspLibrary = loadstring(game:HttpGet("https://pastebin.com/raw/e5iDWKnP"))()
+EspLibrary.Players = true
+EspLibrary:Toggle(true)
+
+VisualsTab:AddToggle({
+	Name = "Box Esp",
+    Flag = "BoxEsp",
+	Default = false,
+	Callback = function(ass)
+		EspLibrary.Boxes = ass
+	end
+})
+
+VisualsTab:AddToggle({
+	Name = "Name Esp",
+    Flag = "NameEsp",
+	Default = false,
+	Callback = function(as)
+		EspLibrary.Names = as
+	end
+})
+
+VisualsTab:AddToggle({
+	Name = "Tracer Esp",
+    Flag = "TracerEsp",
+	Default = false,
+	Callback = function(a)
+		EspLibrary.Tracers = a
+	end
+})
+
+--PLAYER MODS
+local PlrMods = Window:MakeTab({
+	Name = "Player Mods",
+	Icon = "rbxassetid://286958297042",
+	PremiumOnly = false
+})
+
+local Section = PlrMods:AddSection({
+	Name = "PlrMods"
+})
+
+PlrMods:AddToggle({
+	Name = "Noclip",
+    Flag = "Noclip",
+	Default = false,
+	Callback = function(penis)
+        Noclip = penis
+        if Noclip == true then
+	        loadstring(game:HttpGet("https://pastebin.com/raw/9FrV0pah"))()
+        end
+	end
+})
+
+PlrMods:AddToggle({
+	Name = "Inf Jump",
+    Flag = "Inf Jump",
+	Default = false,
+	Callback = function(jmp)
+        InfJump = jmp
+        if InfJump == true then
+            local Player = game:GetService'Players'.LocalPlayer;
+            local UIS = game:GetService'UserInputService';
+            _G.JumpHeight = 50;
+            function Action(Object, Function) if Object ~= nil then Function(Object); end end
+            UIS.InputBegan:connect(function(UserInput)
+                if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+                    Action(Player.Character.Humanoid, function(self)
+                        if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+                            Action(self.Parent.HumanoidRootPart, function(self)
+                                self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+                            end)
+                        end
+                    end)
+                end
+            end)
+        end
+	end
+})
