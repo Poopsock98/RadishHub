@@ -1,0 +1,16 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+
+
+if game.PlaceId == 286090429 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Poopsock98/RadishHub/main/Radish-Hub'))()
+
+elseif game.PlaceId == 8750997647 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Poopsock98/RadishHub/main/radish%20tapping%20legends'))()
+
+elseif game.PlaceId == 6407649031 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Poopsock98/RadishHub/main/Radishnoscope'))()
+
+end
+--INIT
+OrionLib:Init()
