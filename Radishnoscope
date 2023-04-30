@@ -1,3 +1,9 @@
+--[[ 
+PROTECTED WITH SQUIDDY ANTISKIDDY
+MADE BY HOOKED
+]]--
+
+
 do
 	local v0 = tonumber;
 	local v1 = string.byte;
