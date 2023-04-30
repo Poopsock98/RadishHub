@@ -12,7 +12,7 @@ elseif game.PlaceId == 6407649031 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Poopsock98/RadishHub/main/Radishnoscope'))()
 
 elseif game.PlaceId == 4282985734 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Poopsock98/RadishHub/main/CombatWarriorsRADISHED"))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Poopsock98/RadishHub/main/CombatWarriorsRADSSHED"))();
 
 elseif game.PlaceId == 3527629287 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Poopsock98/RadishHub/main/Big%20Paintball%20RADISHED"))();
